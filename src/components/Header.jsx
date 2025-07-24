@@ -118,7 +118,7 @@ const Header = () => {
 
 
 
-               <NavLink to={'/'}>
+               <NavLink to={'/addRecipe'}>
 
 
                   <Button1 content={"Add Recipe"} />
