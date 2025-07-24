@@ -12,7 +12,7 @@ import Button1 from '../utilities/Button1';
 import ModalAuth from '../components/ModalAuth';
 import Auth2 from "../pages/Auth2"
 import { useState } from 'react';
-
+import { Navlink } from 'react-router-dom'
 
 // icons
 
@@ -65,15 +65,45 @@ const Header = () => {
 
             <div className="left flex justify-between items-center gap-4">
                <div className="image hover:cursor-pointer">
-                  <img src={BrandLogo} alt="" className="h-3/4 w-auto" />
+
+                  <NavLink to={'/'}>
+                     <img src={BrandLogo} alt="" className="h-3/4 w-auto" />
+                  </NavLink>
                </div>
                <ul className=" flex justify-between items-center gap-4 text-lg font-semibold">
-                  <li className=" hover:cursor-pointer px-3 py-2 rounded-4xl flex items-center gap-2 hover:text-orange-600 hover:bg-gray-100 transition duration-200">Home <RxCaretDown className="text-2xl" /></li>
-                  <li className=" hover:cursor-pointer px-3 py-2 rounded-4xl flex items-center gap-2 hover:text-orange-600 hover:bg-gray-100 transition duration-200">Recipes <RxCaretDown className="text-2xl" /></li>
-                  <li className=" hover:cursor-pointer px-3 py-2 rounded-4xl flex items-center gap-2 hover:text-orange-600 hover:bg-gray-100 transition duration-200">Cuisines<RxCaretDown className="text-2xl" /></li>
-                  <li className=" hover:cursor-pointer px-3 py-2 rounded-4xl flex items-center gap-2 hover:text-orange-600 hover:bg-gray-100 transition duration-200">Categories <RxCaretDown className="text-2xl" /></li>
-                  <li className=" hover:cursor-pointer px-3 py-2 rounded-4xl flex items-center gap-2 hover:text-orange-600 hover:bg-gray-100 transition duration-200">Blog <RxCaretDown className="text-2xl" /></li>
-                  <li className=" hover:cursor-pointer px-3 py-2 rounded-4xl flex items-center gap-2 hover:text-orange-600 hover:bg-gray-100 transition duration-200">Features <RxCaretDown className="text-2xl" /></li>
+                  <NavLink to={'/'}>
+
+                     <li className=" hover:cursor-pointer px-3 py-2 rounded-4xl flex items-center gap-2 hover:text-orange-600 hover:bg-gray-100 transition duration-200">Home <RxCaretDown className="text-2xl" /></li>
+                  </NavLink>
+                  <NavLink to={'/allRecipes'}>
+
+                     <li className=" hover:cursor-pointer px-3 py-2 rounded-4xl flex items-center gap-2 hover:text-orange-600 hover:bg-gray-100 transition duration-200">Recipes <RxCaretDown className="text-2xl" /></li>
+
+                  </NavLink>
+                  <NavLink to={'/'}>
+
+
+                     <li className=" hover:cursor-pointer px-3 py-2 rounded-4xl flex items-center gap-2 hover:text-orange-600 hover:bg-gray-100 transition duration-200">Cuisines<RxCaretDown className="text-2xl" /></li>
+                  </NavLink>
+                  <NavLink to={'/'}>
+
+                     <li className=" hover:cursor-pointer px-3 py-2 rounded-4xl flex items-center gap-2 hover:text-orange-600 hover:bg-gray-100 transition duration-200">Categories <RxCaretDown className="text-2xl" /></li>
+
+                  </NavLink>
+                  <NavLink to={'/'}>
+
+                     <li className=" hover:cursor-pointer px-3 py-2 rounded-4xl flex items-center gap-2 hover:text-orange-600 hover:bg-gray-100 transition duration-200">Blog <RxCaretDown className="text-2xl" /></li>
+
+                  </NavLink>
+                  <NavLink to={'/'}>
+
+                     <li className=" hover:cursor-pointer px-3 py-2 rounded-4xl flex items-center gap-2 hover:text-orange-600 hover:bg-gray-100 transition duration-200">Features <RxCaretDown className="text-2xl" /></li>
+
+                  </NavLink>
+
+
+
+
 
                </ul>
 
@@ -85,7 +115,14 @@ const Header = () => {
 
                > <FiUser className='hover:cursor-pointer hover:text-primary transition duration-300 ' /></button>
                <HiMagnifyingGlass className='hover:cursor-pointer ' />
-               <Button1 content={"Add Recipe"} />
+
+
+
+               <NavLink to={'/'}>
+
+
+                  <Button1 content={"Add Recipe"} />
+               </NavLink>
             </div>
             {/* modal */}
             <ModalAuth isOpen={isAuthModalOpen} onClose={closeAuthModal}>
