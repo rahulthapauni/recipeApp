@@ -12,7 +12,7 @@ import Button1 from '../utilities/Button1';
 import ModalAuth from '../components/ModalAuth';
 import Auth2 from "../pages/Auth2"
 import { useState } from 'react';
-import { Navlink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 // icons
 

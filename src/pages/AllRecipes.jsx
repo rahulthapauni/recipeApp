@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 const AllRecipes = () => {
    return (
       <>
-         <Header />
+         {/* <Header /> */}
          <PageBanner />
          <AllRecipeGallery />
          <ExploreTag />

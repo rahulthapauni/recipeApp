@@ -16,7 +16,7 @@ const Homepage = () => {
       <>
 
 
-         <Header />
+         {/* <Header /> */}
          <Discover />
          <Recipe1 />
          <Discover2 />

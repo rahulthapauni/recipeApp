@@ -23,7 +23,7 @@ function App() {
           {/* / means defualt url homepage url */}
           <Route path="/" element={<Homepage />} />
           <Route path="/" element={<Homepage />} />
-          <Route path="/allRecipes" element={<Service />} />
+          <Route path="/allRecipes" element={<AllRecipes />} />
           <Route path="/addRecipe" element={<AddRecipe />} />
         </Routes>
 

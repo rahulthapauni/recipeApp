@@ -8,7 +8,7 @@ import AddRecipeForm from '../components/AddRecipeForm'
 const AddRecipe = () => {
    return (
       <>
-         <Header />
+         {/* <Header /> */}
          <PageBanner catchPhrase1={""} Heading1={"Add Recipe"} desciption1={'Discover and share your favorite recipes on Platea! Add your own delicious dishes and inspire others with new culinary creations.'} />
          <AddRecipeForm />
          <ExploreTag />
