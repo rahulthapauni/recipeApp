@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+
+
+@theme {
+   --color-primary: #E92D28;
+   --bg-primary: #E92D28;
+}
+
+@utility text-primary {
+   color: #E92D28;
+}
+
+/* bg-primary {
+   background-color: #E92D28;
+
+}
+
+color-primary {
+   color: #E92D28;
+} */
+
+.wrapper {
+   /* background: red; */
+   /* padding-left: 12px;
+   padding-right: 12px; */
+}
+
+@media (min-width: 1400px) {
+   .wrapper {
+      max-width: 1320px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+.wrapper2 {
+   /* background: red; */
+   /* padding-left: 12px;
+   padding-right: 12px; */
+
+}
+
+@media (min-width: 768px) {
+   .wrapper2 {
+      max-width: 1500px;
+      max-height: 730px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
